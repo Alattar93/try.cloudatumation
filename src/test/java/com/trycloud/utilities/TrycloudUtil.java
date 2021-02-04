@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 public class TrycloudUtil {
 
-    public void login(WebDriver driver) {
+    public static void login(WebDriver driver) {
 
 
         WebElement inputUsername = driver.findElement(By.name("user"));

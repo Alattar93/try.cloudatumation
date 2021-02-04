@@ -2,6 +2,7 @@ package com.trycloud.tests.testCase;
 
 import com.trycloud.tests.base.TestBase;
 import com.trycloud.utilities.ConfigurationReader;
+import com.trycloud.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -12,7 +13,6 @@ public class UserStory1_TC1_LoginSuccessfully extends TestBase {
 
     @Test
     public void Verify_user_login_successfully() {
-
 
         WebElement inputUsername = driver.findElement(By.name("user"));
         String username = ConfigurationReader.getProperty("username");
@@ -27,7 +27,7 @@ public class UserStory1_TC1_LoginSuccessfully extends TestBase {
         loginButton.click();
 
 
-        String expectedUrl = "http://qa.trycloud.net/index.php/apps/files/";
+        String expectedUrl = "http://qa2.trycloud.net/index.php/apps/dashboard/";
         String actualUrl = driver.getCurrentUrl();
 
 

@@ -40,7 +40,7 @@ public abstract class TestBase {
     @AfterClass
     public void tearDown(){
         BrowserUtilities.sleep(2);
-       //driver.close();
+       driver.close();
     }
 
 }
