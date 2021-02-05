@@ -2,6 +2,7 @@ package com.trycloud.tests.base;
 
 import com.trycloud.utilities.BrowserUtilities;
 import com.trycloud.utilities.ConfigurationReader;
+import com.trycloud.utilities.Driver;
 import com.trycloud.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,9 +31,6 @@ public abstract class TestBase {
         driver.get(url);
         driver.manage().window().maximize();
     }
-
-
-
 
 
 
