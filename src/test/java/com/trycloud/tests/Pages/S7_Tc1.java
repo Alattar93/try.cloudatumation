@@ -28,6 +28,6 @@ public class S7_Tc1 {
     public WebElement searchBar;
 
 
-    @FindBy(xpath = "//h3[@title='Files']")
+    @FindBy(xpath = "//div[@id='header-menu-unified-search']//ul//li[1]//h3")
     public WebElement expectedResult;
 }

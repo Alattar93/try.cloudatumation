@@ -28,9 +28,13 @@ public class Story7_TC1 {
         BrowserUtilities.sleep(1);
 
 
-        s.searchBar.sendKeys("files");
+        s.searchBar.sendKeys("schedule");
         BrowserUtilities.sleep(2);
-        Assert.assertTrue(s.expectedResult.isDisplayed());
+
+
+        Assert.assertTrue(s.expectedResult.getAttribute("title").contains("schedule"));
+        System.out.println(s.expectedResult.getAttribute("title"));
+
 
 
 
